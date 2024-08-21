@@ -8,9 +8,82 @@
     <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.10/dist/full.min.css" 
     rel="stylesheet"
     type="text/css" />
+    <!-- <<<<<<Font Awesome>>>>>> -->
+    <script src="https://kit.fontawesome.com/79659e1450.js" crossorigin="anonymous"></script>
     <script src="https://cdn.tailwindcss.com"></script>
+    <!-- <<<<<<Google Font>>>>> -->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap" rel="stylesheet">
+    <style>
+        .font-manrope{
+            font-family: "Manrope", sans-serif;
+        }
+    </style>
+    <script>
+        tailwind.config = {
+          theme: {
+            extend: {
+              colors: {
+                clifford: '#da373d',
+                'button-primary':'#FF4240',
+              }
+            }
+          }
+        }
+      </script>
 </head>
-<body>
-    <h1 class="text-cyan-300">Hello</h1>
+<body class="font-manrope">
+    <header class="container mx-auto">
+        <div class="navbar bg-base-100 ">
+            <div class="navbar-start">
+              <div class="dropdown">
+                <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    class="h-5 w-5"
+                    fill="none"
+                    viewBox="0 0 24 24"
+                    stroke="currentColor">
+                    <path
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      stroke-width="2"
+                      d="M4 6h16M4 12h8m-8 6h16" />
+                  </svg>
+                </div>
+                <ul
+                  tabindex="0"
+                  class="menu menu-sm dropdown-content bg-base-100 rounded-box z-[1] mt-3 w-52 p-2 shadow text-base font-normal">
+                <li class="hover:text-button-primary duration-300 ease-in-out"><a>Home</a></li>
+                <li class="hover:text-button-primary duration-300 ease-in-out"><a>About</a></li>
+                <li class="hover:text-button-primary duration-300 ease-in-out"><a>Pages</a></li>
+                <li class="hover:text-button-primary duration-300 ease-in-out"><a>Blog</a></li>
+                <li class="hover:text-button-primary duration-300 ease-in-out"><a>Contact</a></li>
+                </ul>
+              </div>
+              <a class="btn btn-ghost font-extrabold lg:text-4xl text-xl">Hockey<span class="text-button-primary">'</span>s</a>
+            </div>
+            <div class="navbar-center hidden lg:flex">
+              <ul class="menu menu-horizontal px-1 text-base font-normal">
+                      <li class="hover:text-button-primary duration-300 ease-in-out"><a>Home</a></li>
+                      <li class="hover:text-button-primary duration-300 ease-in-out"><a>About</a></li>
+                      <li class="hover:text-button-primary duration-300 ease-in-out"><a>Pages</a></li>
+                      <li class="hover:text-button-primary duration-300 ease-in-out"><a>Blog</a></li>
+                      <li class="hover:text-button-primary duration-300 ease-in-out"><a>Contact</a></li>
+              </ul>
+            </div>
+            <div class="navbar-end">
+                <i class="fa-solid fa-magnifying-glass text-button-primary lg:mx-6 text-xl"></i>
+              <a class="btn bg-button-primary text-white lg:text-xl sm:text-sm font-bold">Get Ticket</a>
+            </div>
+          </div>
+    </header>
+    <main>
+
+    </main>
+    <footer>
+
+    </footer>
 </body>
 </html>
